@@ -1,0 +1,53 @@
+.replyHidden {
+    display: none;
+}
+
+.comment-list .comment-img {
+    width: 46px;
+    height: 46px;
+}
+
+.comment-list .panel {
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 0;
+}
+
+.comment-list .panel-body {
+    padding: 25px 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.comment-list .media-block .media-left {
+    display: block;
+    float: left
+}
+
+.comment-list .media-block .media-body {
+    display: block;
+    overflow: hidden;
+    width: auto
+}
+
+.comment-list .btn-hover-success:hover {
+    color: #fff;
+    background-color: #3c763d;
+}
+.comment-list .btn-hover-danger:hover {
+    color: #fff;
+    background-color: #a94442;
+}
+.comment-list .ellipsis {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.comment-list .ellipsis-item {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,29 @@
+.article_image {
+    display:block;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+}
+.article_image_source {
+    margin-bottom: 20px;
+}
+.article_preview {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    cursor: not-allowed;
+}
+.article-box .ellipsis {
+    display: -webkit-flex;
+    display: flex;    
+    align-items: center;
+}
+.article-box .ellipsis-item {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

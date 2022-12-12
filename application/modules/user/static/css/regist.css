@@ -1,0 +1,41 @@
+.user-regist-step {
+    margin-bottom: 9px;
+}
+
+.user-regist-step .step {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.user-regist-step .step:last-child {
+    border: 1px solid #ddd;
+}
+
+.user-regist-step .step:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.user-regist-step .step:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.user-regist-step .step:hover {
+    color: #337ab7;
+}
+
+.user-regist-step .activestep {
+    color: #286090;
+    height: 100px;
+    margin-top: -7px;
+    padding-top: 7px;
+    border-left: 6px solid #5cb85c !important;
+    border-right: 6px solid #5cb85c !important;
+    border-top: 3px solid #5cb85c !important;
+    border-bottom: 3px solid #5cb85c !important;
+}
+
+.user-regist-step .fa {
+    padding-top: 15px;
+    font-size: 40px;
+}

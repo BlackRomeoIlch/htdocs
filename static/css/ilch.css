@@ -1,0 +1,93 @@
+/* Gallery and Download */
+#gallery, #downloads {
+    float: none;
+    width: 100%;
+    display: inline-block;
+}
+
+#gallery, #downloads img {
+    width: 100%;
+    height: auto;
+}
+
+pre code {
+    white-space: pre !important;
+}
+
+.captcha {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.has-error .cke {
+    border-color: #a94442;
+}
+
+span.social-logins > a.btn.btn-link.provider-twitter {
+    color: #1DA1F2;
+}
+
+span.social-logins > a.btn.btn-link.provider-twitter:hover {
+    color: #0c85d0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ilch-date {
+    min-width: 210px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+
+/* ilch Standard */
+.ilch-border {
+    border: 1px solid #E4E4E4;
+}
+.ilch-head {
+    background-color: #337ab7;
+    color: #FFF;
+}
+.ilch-head a,
+.ilch-head a:hover {
+    color: #FFF;
+}
+.ilch-head-dark {
+    background-color: #2E3539;
+    color: #FFF;
+}
+.ilch-head-dark a {
+    color: #FFF;
+}
+.ilch-head-dark a:hover {
+    color: #FFF;
+}
+.ilch-bg {
+    background-color: #F2F2F2;
+}
+.ilch-bg--hover {
+    background-color: #FFF;
+}
+.ilch-bg--hover:hover {
+    background-color: #F2F2F2;
+}
+.ilch-devider {
+    border-color: #E4E4E4;
+}
+.ilch-link {
+    color: #000;
+}
+.ilch-link-red {
+    color: #AA0000;
+}
+
+/* Set cursor and remove left border on input-group-addon fa-times span to remove input value */
+.input-group .input-group-addon span.fa-times {
+    cursor: pointer;
+}
+.input-group > :not(.input-group-addon):not(.input-group-btn) + .input-group-addon {
+    border-left-width: 0;
+}

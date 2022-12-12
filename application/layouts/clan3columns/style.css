@@ -1,0 +1,289 @@
+body {
+    background: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+img {
+    height: auto !important;
+    max-width: 100% !important;
+}
+
+a {
+    color: #428BCA;
+    text-decoration: none;
+}
+
+label {
+    font-weight: normal;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: inherit;
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+hr {
+    border-color: #E4E4E4;
+}
+
+.navbar-gaming {
+    background: #40434E;
+    border-bottom: 1px solid #32333B;
+    margin-bottom: 0;
+}
+
+.navbar-gaming .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-gaming .container-fluid .navbar-collapse {
+    margin-right: -30px;
+    margin-left: -30px;
+}
+
+.navbar-gaming .container-fluid .navbar-collapse .panel {
+    border: 0;
+}
+
+.navbar-gaming .navbar-nav > li > a:hover, .navbar-gaming .navbar-nav > li > a:focus {
+    background-color: #32333B;
+    color: #32333B;
+}
+
+.navbar-gaming .dropdown-menu > li > a:hover,
+.navbar-gaming .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #32333B;
+    background-color: #32333B;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    background-color: #40434E;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #EEE;
+}
+
+header .container {
+    margin-top: 51px;
+}
+
+@media (min-width: 768px) {
+    header .container {
+        margin-top: 0;
+    }
+}
+
+header .container .gaming {
+    margin: 0;
+    padding: 0;
+    border-top: 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    header .container .gaming {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header .container .gaming {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    header .container .gaming .carousel-control {
+        width: 10%;
+    }
+}
+
+header .container .gaming .carousel-indicators {
+    bottom: 0;
+    margin-bottom: 5px;
+}
+
+header .container .gaming .gaming-name {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 70%;
+    margin-left: 15%;
+    padding: 10px 0;
+    color: #FFF;
+    font-size: 27px;
+    text-shadow: 0 3px 10px #32333B;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+
+@media (min-width: 768px) {
+    header .container .gaming .gaming-name {
+        top: 20px;
+        padding: 15px 0;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    header .container .gaming .gaming-name {
+        top: 30px;
+        font-size: 37px;
+    }
+}
+
+.container {
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
+
+.gaming {
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .gaming {
+        padding: 20px;
+        margin: 10px;
+        border: 5px solid #32333B
+    }
+}
+
+@media (min-width: 992px) {
+    .gaming {
+        margin: 20px 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gaming {
+        margin: 30px 0;
+    }
+}
+
+.panel-gaming,
+.panel-default {
+    border-radius: 0;
+}
+
+@media (min-width: 768px) {
+    .panel-gaming,
+    .panel-default {
+        border-radius: 4px;
+    }
+}
+
+.panel-gaming > .panel-heading {
+    color: #4295C9;
+    background-color: #32333B;
+    margin-top: 0;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-rendering: optimizelegibility;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+
+.panel-gaming > .panel-body li {
+    line-height: 35px;
+    border-bottom: 1px solid #DDD;
+}
+
+.panel-gaming > .panel-body a {
+    color: #4295C9;
+    text-decoration: none;
+}
+
+.ilch--new-message a.text-danger {
+    color: #a94442;
+}
+
+.footer .container {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .footer .container {
+        margin-top: 0;
+    }
+}
+
+.footer .container .gaming {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .footer .container .gaming {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer .container .gaming {
+        margin: 0;
+    }
+}
+
+.footer .container .gaming ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .container .gaming ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.footer .container .gaming ul li:after {
+    content: ' | ';
+}
+
+.footer .container .gaming ul li:last-child:after {
+    content: '';
+}
+
+.footer .container .gaming .row [class*="col-"]  {
+    padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+    .footer .container .gaming .nav {
+        text-align: right;
+    }
+}

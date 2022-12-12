@@ -1,0 +1,45 @@
+{
+    "name": "ilchcms/ilch-2.0",
+    "description": "CMS for Clans and Communities",
+    "type": "project",
+    "license": "GPLv3",
+    "minimum-stability": "stable",
+    "config": {
+        "platform": {
+            "php": "7.3"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "jbbcode/jbbcode": "^1.4",
+        "ifsnop/mysqldump-php": "2.*",
+        "kartik-v/bootstrap-star-rating": "^4.0",
+        "twbs/bootstrap": "^3.4",
+        "fortawesome/font-awesome": "^5.13",
+        "npm-asset/jquery": "^3.5",
+        "npm-asset/jquery-ui": "^1.13",
+        "ckeditor/ckeditor": "^4.14",
+        "phpmailer/phpmailer": "~6.1",
+        "harvesthq/chosen": "^1.8",
+        "ezyang/htmlpurifier": "^4.12",
+        "blueimp/jquery-file-upload": "^10.30.0"
+    },
+    "require-dev": {
+        "maximebf/debugbar": "^1.15",
+        "phpunit/phpunit": "^9.5",
+        "symfony/yaml": "^3.3.6"
+    },
+    "autoload": {
+        "psr-0": { "": "application/libraries/" },
+        "files": ["application/libraries/Ilch/Functions.php"]
+    },
+    "autoload-dev": {
+        "psr-4": { "PHPUnit\\": "tests/PHPUnit" }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}

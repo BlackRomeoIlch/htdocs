@@ -1,0 +1,102 @@
+.group-image {
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+#war_index {
+    overflow: hidden;
+}
+#war_index .col-lg-12 {
+    border-width: 0 0 1px;
+    border-style: none none solid;
+    border-color: #E5E5E5;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#war_index h3 {
+    margin-top: 0;
+}
+#war_index .thumbnail {
+    display: inline-block;
+    float: left;
+    margin: 5px 10px 5px 0;
+}
+.center-text {
+    text-align: center;
+}
+.plays-vs {
+    margin: 60px 0;
+}
+.war_win {
+    color: #0C0;
+}
+.war_lost {
+    color: #F00;
+}
+.war_drawn {
+    color: #006FFF;
+}
+.no_margin {
+    margin: 0 !important;
+}
+.no_padding {
+    padding: 0 !important;
+}
+.center-text img {
+    min-width: 100%;
+}
+
+
+/* Box */
+.nextwar-box,
+.lastwar-box {
+    margin: 0 15px;
+}
+.nextwar-box [class*="col-"],
+.lastwar-box [class*="col-"] {
+    padding: 0;
+}
+.nextwar-box i,
+.lastwar-box i {
+    padding-right: 4px;
+}
+.nextwar-box img,
+.lastwar-box img {
+    float: left;
+    padding-right: 4px;
+}
+.nextwar-box .ellipsis,
+.lastwar-box .ellipsis {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.nextwar-box .ellipsis-item,
+.lastwar-box .ellipsis-item {
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.nextwar-box .nextwar-vs,
+.lastwar-box .nextwar-vs {
+    display: flex;
+    align-items: flex-end;
+    padding: 0 5px;
+    min-height: 20px;
+}
+.nextwar-box .nextwar-date,
+.lastwar-box .nextwar-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-left: 5px;
+    min-height: 20px;
+}

@@ -1,0 +1,429 @@
+nav {
+  margin-top: 0;
+}
+
+.event-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.event-list > li {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgb(51, 51, 51);
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.7);
+    padding: 0;
+    margin: 0 0 20px;
+}
+.event-list > li > time {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 44, 102);
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.event-list > li:nth-child(even) > time {
+    background-color: rgb(165, 82, 167);
+}
+.event-list > li > time > span {
+    display: none;
+}
+.event-list > li > time > .day {
+    display: block;
+    font-size: 56pt;
+    font-weight: 100;
+    line-height: 1;
+}
+.event-list > li time > .month {
+    display: block;
+    font-size: 24pt;
+    font-weight: 900;
+    line-height: 1;
+}
+.event-list > li > img {
+    width: 100%;
+}
+.event-list > li > .info {
+    padding-top: 5px;
+    text-align: center;
+}
+.event-list > li > .info > .title {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0;
+}
+.event-list > li > .info > .desc {
+    font-size: 13pt;
+    font-weight: 300;
+    margin: 0;
+}
+.event-list > li > .info > ul,
+.event-list > li > .adminInfo > ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.event-list > li > .adminInfo > ul {
+    margin: 0;
+}
+.event-list > li > .info > ul > li,
+.event-list > li > .adminInfo > ul > li {
+    display: table-cell;
+    cursor: pointer;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
+    font-weight: 300;
+    padding: 3px 0;
+}
+.event-list > li > .info > ul > li > a {
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+} 
+.event-list > li > .adminInfo > ul > li {
+    padding: 0;
+}
+.event-list > li > .adminInfo > ul > li > a {
+    padding: 3px 0;
+} 
+.event-list > li > .info > ul > li:hover,
+.event-list > li > .adminInfo > ul > li:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
+}
+.edit a,
+.del a {
+    display: block;
+    width: 100%;
+    color: rgb(75, 110, 168) !important;
+}
+.edit:hover a,
+.del:hover a {
+    background-color: rgb(200, 200, 200) !important;
+}
+
+@media (min-width: 768px) {
+    .event-list > li {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 0;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        display: inline-block;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        float: left;
+    }
+    .event-list > li > .info {
+        background-color: rgb(245, 245, 245);
+        overflow: hidden;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        height: 120px;
+        padding: 0;
+        margin: 0;
+    }
+    .event-list > li > .info {
+        position: relative;
+        height: 120px;
+        text-align: left;
+        padding-right: 40px;
+    }	
+    .event-list > li > .info > .title, 
+    .event-list > li > .info > .desc {
+        padding: 0 10px;
+    }
+    .event-list > li > .info > ul {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .event-list > li > .adminInfo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 40px;
+    }
+    .event-list > li > .adminInfo > ul {
+        border-left: 1px solid rgb(230, 230, 230);
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+    .event-list > li > .adminInfo > ul > li {			
+        display: block;
+        padding: 0;
+    }
+    .event-list > li > .adminInfo > ul > li > a {
+        display: block;
+        width: 40px;
+        padding: 10px 0 9px;
+    }
+}
+
+.event-head {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.headPic {
+    z-index: 1;
+    float: left;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+.datePic {
+    z-index: 2;
+    color: #000;
+    background-color: #FFF;
+    bottom: -25px;
+    margin-left: 10px;
+    position: absolute;
+    width: 55px;
+    border: 1px solid #dddddd;
+    -webkit-border-radius: 5px;
+    text-align: center;
+}
+.dateDayPic {
+    font-size: 20px;
+    margin-top: 3px;
+}
+.dateMonthPic {
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.titlePic {
+    position: absolute;
+    left: 80px;
+    bottom: 0;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.5);
+    font-size: 20px;
+}
+.naviPic {
+    display: inline-block;
+    width: 100%;
+    clear: both;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 5px;
+    min-height: 41px;
+}
+.naviGast {
+    float: left;
+    margin-top: 5px;
+    margin-left: 75px;
+}
+.naviButtons {
+    float: right;
+    right: 10px;
+}
+.entrants-user {
+    display: block;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+.entrants-user:last-of-type {
+     padding-bottom: 0;
+     margin-bottom: 0;
+     border-bottom: 0;
+ }
+.entrants-user-link:hover {
+    text-decoration: none;
+}
+.more-entrants {
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #dddddd;
+}
+.events-thumbnail {
+    width: 68px;
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: 0;
+    border-width: medium;
+    border-style: solid;
+}
+.events-thumbnail-agree {
+    border-color: green;
+}
+.events-thumbnail-maybe {
+    border-color: orange;
+}
+.eventBoxHead {
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+.eventBoxBottom {
+    border-top: 1px solid #efefef;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px;
+}
+.eventBoxContent {
+    margin-top: -1px;
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+.eventCommentSubmit {
+    border: 1px solid #dddddd;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+@media (max-width: 768px) {
+    .eventCommentSubmit {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .eventCommentSubmit {
+        margin-top: 15px;
+    }
+}
+.eventTextarea {
+    height: 30px;
+    width: 100%;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: hidden;
+    resize: none;
+    box-shadow: none;
+}
+.eventTextarea:focus {
+    border: 0 none #FFF;
+    overflow: hidden;
+    outline: none;
+    box-shadow: none;
+}
+.eventSubmit {
+    border-top: 1px solid #efefef;
+    padding: 5px;
+    height: 41px;
+}
+.eventAddress {
+    margin-left: 15px;
+}
+.eventPlaceMarker {
+    float: left;
+    padding-right: 7px;
+}
+
+
+.commentEventText {
+    padding: 5px;
+}
+.avatar {
+    width: 40px;
+    height: auto;
+    border: 1px solid #dddddd;
+}
+.userEventInfo {
+    margin-left: 48px;
+}
+
+.date {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 999px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    background: red;
+    cursor: inherit;
+    display: block;
+}
+input[readonly] {
+    background-color: white !important;
+    cursor: text !important;
+}
+
+
+.input-group > .input-group-addon:not(:last-child):not(:nth-last-child(2)) {
+    border-right-width: 0;
+}
+.input-group > :not(.input-group-addon):not(.input-group-btn) + .input-group-addon {
+    border-left-width: 0;
+}
+.input-group > .input-group-btn:not(:first-child) > .btn,
+.input-group > .input-group-btn:not(:first-child) > .btn-group > .btn {
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.input-group > .input-group-btn:not(:first-child):not(:last-child) > .btn,
+.input-group > .input-group-btn:not(:first-child):not(:last-child) > .btn-group > .btn {
+    border-radius: 0;
+}
+
+
+/* Google Maps Place */
+.pac-item:hover {
+    cursor: pointer;
+}
+.poi-info-window {
+    margin-top: 3px;
+}
+.poi-info-window .title {
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 14px;
+}
+.poi-info-window .address {
+    margin-top: 2px;
+    color: #000;
+}
+
+
+#showMap {
+    cursor: pointer;
+}
+#map-canvas {
+    height: 250px;
+    margin-top: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+#big-map-canvas {
+    height: 450px;
+}
+@media (max-width: 768px) {
+    #map-canvas {
+        height: 175px;
+    }
+    #big-map-canvas {
+        height: 53vh;
+    }
+}
+#big-map-canvas img, #map-canvas img {
+    max-width: none !important;
+}
