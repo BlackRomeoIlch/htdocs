@@ -597,7 +597,7 @@ footer a.totop:hover .innertop{
 }
 @media (max-width:992px) {
 	.flexslider .slides img {
-		height:400px;
+		height:250px;
 	}
 	.flexslider .flex-caption {
 		top:20px;
